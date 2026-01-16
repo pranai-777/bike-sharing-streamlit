@@ -51,3 +51,18 @@ elif day_type == "Non-Working Days Only":
 
 
 st.title("🚲 Bike Sharing Demand Dashboard")
+st.subheader("Average Bike Rentals by Hour")
+
+fig, ax = plt.subplots()
+sns.lineplot(
+    data=filtered_df,
+    x="hour",
+    y="count",
+    ax=ax
+)
+
+ax.set_xlabel("Hour of Day")
+ax.set_ylabel("Total Rentals")
+ax.set_title("Hourly Bike Demand")
+
+st.pyplot(fig, clear_figure=True)
