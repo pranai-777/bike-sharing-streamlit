@@ -25,7 +25,8 @@ st.markdown("Interactive analysis of Washington D.C. bike rentals (2011–2012)"
 # Sidebar filters
 st.sidebar.header("Filters")
 year = st.sidebar.selectbox("Select Year", sorted(df['year'].unique()))
-working = st.sidebar.selectbox("Working Day", ["All", 0, 1])
+working = st.sidebar.selectbox("Working Day", ["All", Working Day, Non Working Day])
+season = st.sidebar.selectbox("Select Season", [Spring,Summer,Fall,Winter)
 
 filtered = df[df['year'] == year]
 if working != "All":
