@@ -30,7 +30,7 @@ st.title("🚲 Bike Sharing Demand Dashboard")
 st.markdown("Interactive analysis of Washington D.C. bike rentals (2011–2012)")
 
 # ---------------- SIDEBAR FILTERS ----------------
-st.sidebar.header("Filters")
+st.sidebar.header("📊 Dashboard")
 
 year = st.sidebar.selectbox(
     "Select Year",
