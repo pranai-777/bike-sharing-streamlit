@@ -20,11 +20,10 @@ The dashboard allows users to explore how **time, season, weather, and working d
 
  # 📁 Repository Structure
 bike-sharing-streamlit/
-│
-├── app.py # Streamlit dashboard application
-├── train.csv # Dataset (Bike Sharing Demand)
-├── requirements.txt # Required Python libraries
-└── README.md # Project documentation
+1. app.py # Streamlit dashboard application
+2. train.csv # Dataset (Bike Sharing Demand)
+3. requirements.txt # Required Python libraries
+4. README.md # Project documentation
 
 # 🎛️ Dashboard Features
 
@@ -43,4 +42,5 @@ bike-sharing-streamlit/
 - Impact of **weather conditions**
 - **Correlation heatmap** of numerical variables
 
-git clone https://github.com/your-username/bike-sharing-streamlit.git
+# 🌐 Live Dashboard
+🔗 Streamlit App: https://bike-sharing-app-77.streamlit.app/
