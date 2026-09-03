@@ -872,57 +872,55 @@ with col2:
         .reset_index()
     )
 
-
     fig_month = px.line(
-
         monthly,
-
         x="month",
-
         y="count",
-
         markers=True,
-
         title="Monthly Demand Trend"
     )
 
-
     fig_month.update_traces(
-
         line=dict(
             color=ORCHID,
             width=3
         ),
-
         marker=dict(
             color=ORCHID,
             size=7
         )
     )
 
-
     fig_month.update_layout(
-
-        **common_layout,
-
-        xaxis_title="Month",
-
-        yaxis_title="Average Rentals",
-
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(
+            color="#F4F1EA"
+        ),
+        margin=dict(
+            l=50,
+            r=30,
+            t=60,
+            b=50
+        ),
         xaxis=dict(
+            title="Month",
             tickmode="linear",
             dtick=1,
-            gridcolor=
-                "rgba(255,255,255,0.06)"
+            gridcolor="rgba(255,255,255,0.06)",
+            zerolinecolor="rgba(255,255,255,0.06)"
+        ),
+        yaxis=dict(
+            title="Average Rentals",
+            gridcolor="rgba(255,255,255,0.06)",
+            zerolinecolor="rgba(255,255,255,0.06)"
         )
     )
-
 
     st.plotly_chart(
         fig_month,
         use_container_width=True
     )
-
 
 # ============================================================
 # WEATHER ANALYSIS
