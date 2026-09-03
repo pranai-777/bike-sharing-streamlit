@@ -1303,11 +1303,11 @@ st.download_button(
 
 st.markdown(
     """<div class="footer">
-<div class="footer-title">BIKE SHARING DEMAND INTELLIGENCE</div>
+
 <br>
-Built with Python • Pandas • Plotly • Streamlit
+@Pranai Teja Sabbe
 <br><br>
-Data Science Portfolio Project
+Data Scientist
 </div>""",
     unsafe_allow_html=True
 )
