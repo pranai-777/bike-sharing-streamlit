@@ -1297,17 +1297,5 @@ st.download_button(
 )
 
 
-# ============================================================
-# FOOTER
-# ============================================================
 
-st.markdown(
-    """<div class="footer">
-
-<br>
-@Pranai Teja Sabbe
-<br><br>
-Data Scientist
-</div>""",
-    unsafe_allow_html=True
 )
